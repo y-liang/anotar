@@ -1,0 +1,80 @@
+.Proj-other {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.Proj-other .prev-button,
+.Proj-other .next-button {
+  width: 5%;
+  margin: auto;
+}
+
+.Proj-other .anticon svg {
+  width: 28px;
+  height: 28px;
+  color: blue;
+  opacity: 0.25;
+  margin-top: 50%;
+}
+
+.Proj-other .anticon svg:hover {
+  opacity: 0.75;
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+
+.Proj-other .ant-carousel {
+  width: 80%;
+  margin: 48px auto;
+}
+
+.ant-carousel .slick-dots li button {
+  background: blue;
+  opacity: 0.1;
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+}
+
+.ant-carousel .slick-dots li button:hover {
+  opacity: 0.1;
+  width: 36px;
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+  background: blue;
+  opacity: 0.5 !important;
+  width: 24px;
+}
+
+.Proj-undergrad,
+.Proj-other {
+  margin-top: 72px;
+}
+
+.Proj-undergrad .anticon svg,
+.Proj-other .anticon svg {
+  width: 28px;
+  height: 28px;
+  color: blue;
+  opacity: 0.25;
+}
+
+.Proj-undergrad .anticon svg:hover,
+.Proj-other .anticon svg:hover{
+  opacity: 0.75;
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+
+.Proj-undergrad .ant-carousel .slick-dots li,
+.Proj-other .ant-carousel .slick-dots li {
+  margin-top: 48px;
+}
+
+@media screen and (max-width: 1040px) {
+  .Proj-other .ant-carousel {
+    width: 75%;
+  }
+}

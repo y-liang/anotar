@@ -1,0 +1,366 @@
+.ant-drawer-content-wrapper {
+  height: auto !important;
+}
+
+.ant-btn {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  line-height: 1.5;
+
+  &:hover {
+    border: 0px solid transparent;
+    background-color: transparent;
+  }
+
+  &:focus {
+    border: 0px solid transparent;
+    background-color: transparent;
+  }
+}
+
+.ant-input {
+  border: 1px solid transparent;
+  border-radius: 0px;
+  transition: all 0.3s linear;
+  text-align: center;
+  
+  &:hover {
+    border: 1px solid transparent;
+    border-top: 1px solid rgba(0, 0, 255, 0.25);
+  }
+  
+  &:focus {
+    border: 1px solid transparent;
+    border-top: 1px solid rgba(0, 0, 255, 0.5);
+    box-shadow: none;
+  }
+}
+
+.ant-form {
+  display: flex;
+
+}
+
+.ant-form.ant-form-vertical.ant-form-hide-required-mark {
+
+  &:nth-child(2) {
+    width: 300px;
+  }
+}
+
+.button-message {
+  width: 12%;
+  margin: 75px 44%;
+  border: 0px solid transparent;
+  font-size: 16px;
+  background-color: transparent;
+
+  &:hover {
+    color: rgba(0, 0, 255, 0.75);
+    border: 3px solid transparent;
+    border-bottom: 3px solid rgba(0, 0, 255, 0.75);
+    transition: border-bottom 0.3s linear;
+  }
+}
+
+.contact-section {
+  margin-top: 150px;
+  background-color: rgba(255, 255, 0, 0.5);
+}
+
+.anticon.anticon-close svg {
+  width: 12px;
+  height: 12px;
+}
+
+.ant-form-vertical .ant-form-item-label, .ant-col-24.ant-form-item-label, .ant-col-xl-24.ant-form-item-label {
+  text-align: center;
+}
+
+[ant-click-animating-without-extra-node="true"]::after {
+  border: none;
+}
+
+.ant-drawer-bottom.ant-drawer-open .ant-drawer-content-wrapper {
+  box-shadow: 0 -2px 8px rgba(255, 255, 0, 0.25);
+}
+
+.ant-drawer-mask {  
+  background-color: yellow;
+}
+
+.ant-drawer-title {
+  color: transparent;
+}
+
+.ant-drawer.ant-drawer-open .ant-drawer-mask {
+  animation-duration: 1s; /*background color animation*/
+  opacity: 0.2;
+}
+.ant-drawer-header {
+  margin: 0 20%;
+  border-bottom: 1px solid rgba(255, 75, 0, 0.75);
+  border-radius: 0;
+}
+
+.ant-drawer-body {
+  margin: 0 25% 5% 25%;
+}
+
+.has-error .ant-form-explain, .has-error .ant-form-split {
+  color: rgba(0, 0, 255, 0.75);
+  margin-left: 12px;
+  font-size: 12px;
+}
+
+.has-error .ant-input {
+  border: 0;
+  border-color: transparent;
+  box-shadow: 0 0 8px rgba(0, 0, 255, 0.25);
+
+  &:hover {
+    border-color: transparent;
+    border: 0;
+  }
+  &:focus {
+    border-color: transparent;
+    box-shadow: 0 0 8px rgba(0, 0, 255, 0.25);
+  }
+  &:not([disabled]):hover {
+    border-color: transparent;
+  }
+}
+
+.drawer-footer {
+  border-top: 0px solid transparent;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 60px;
+  text-align: right;
+
+  input {
+    background-color: transparent;
+    border: 0;
+    margin-left: 12px;
+
+    &:hover {
+      color: rgba(0, 0, 255, 0.75);
+      cursor: pointer;
+    }
+  }
+}
+
+@keyframes antdDrawerFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+
+.contact-input,
+.contact-span,
+.contact-label,
+.contact-textarea {
+  display: block;
+  margin: 10px auto;
+  padding: 5px;
+  border: none;
+  font-size: 14px;
+}
+
+.contact-textarea:focus,
+.contact-input:focus {
+  outline: 0;
+}
+
+/* contact-Question */
+.contact-input.contact-question,
+.contact-textarea.contact-question {
+  font-size: 16px;
+  border-radius: 2px;
+  margin: 0 auto;
+  border: none;
+  width: 100%;
+  background: transparent;
+  transition: padding-top 0.2s ease, margin-top 0.2s ease;
+  overflow-x: hidden; /* Hack to make "rows" attribute apply in Firefox. */
+}
+
+/* Underline and Placeholder */
+// div + p	Selects all <p> elements that are placed immediately after <div> elements
+
+.contact-input.contact-question + .contact-label,
+.contact-textarea.contact-question + .contact-label {
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  width: 2.5%;
+  border-top: 1px solid rgba(255, 75, 0, 0.75);
+  transition: width 0.4s ease;
+  height: 0px;
+}
+
+.contact-input.contact-question:focus + .contact-label,
+.contact-textarea.contact-question:focus + .contact-label {
+  border-top: 1px solid rgba(255, 75, 0, 0.75);
+  width: 100%;
+}
+
+.contact-input.contact-question + .contact-label > .contact-span,
+.contact-textarea.contact-question + .contact-label > .contact-span {
+  font-weight: 300;
+  margin: 0;
+  position: absolute;
+  color: rgba(0, 0, 255, 0.5);
+  font-size: 16px;
+  top: -36px;
+  left: 0px;
+  z-index: -1;
+  transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+}
+
+.contact-input.contact-question:focus,
+.contact-input.contact-question:valid {
+  padding-top: 35px;
+  text-align: center;
+}
+
+.contact-textarea.contact-question:valid,
+.contact-textarea.contact-question:focus {
+  margin-top: 35px;
+  text-align: center;
+}
+
+.contact-input.contact-question:focus + .contact-label > .contact-span,
+.contact-input.contact-question:valid + .contact-label > .contact-span {
+  top: -60px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.contact-textarea.contact-question:focus + .contact-label > .contact-span,
+.contact-textarea.contact-question:valid + .contact-label > .contact-span {
+  top: -90px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.contact-input.contact-question:valid + .contact-label,
+.contact-textarea.contact-question:valid + .contact-label {
+  border-color: rgba(0, 0, 255, 0.75);
+}
+
+.contact-input.contact-question:invalid,
+.contact-textarea.contact-question:invalid {
+  box-shadow: none;
+}
+
+
+
+.contact-input[type="reset"],
+.contact-input[type="submit"] {
+  transition: opacity 0.2s ease, background 0.2s ease;
+  display: inline-block;
+  opacity: 0;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+  color: rgba(0, 0, 255, 0.75);
+  background: rgba(0, 0, 255, 0.05);
+  
+  &:hover {
+    color: rgba(0, 0, 0, 0.9);
+    background: rgba(255, 255, 0, 0.25);
+  }
+  &:active {
+    background: transparent;
+  }
+}
+
+// p ~ ul	Selects every <ul> element that are preceded by a <p> element
+
+.contact-input.contact-question:valid ~ .contact-input[type="reset"], .contact-textarea.contact-question:valid ~ .contact-input[type="reset"],
+.contact-input.contact-question:valid ~ .contact-input[type="submit"], .contact-textarea.contact-question:valid ~ .contact-input[type="submit"] {
+  animation: btnAppear 1s forwards;
+}
+
+.contact-input.contact-question:invalid ~ .contact-input[type="reset"], .contact-textarea.contact-question:invalid ~ .contact-input[type="reset"]
+.contact-input.contact-question:invalid ~ .contact-input[type="submit"], .contact-textarea.contact-question:invalid ~ .contact-input[type="submit"] {
+  display: none;
+}
+
+
+@keyframes btnAppear {
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+@media screen and (max-width: 750px) {
+  .button-message {
+    width: 24%;
+    margin: 75px 38%;
+    font-size: 12px;
+  }
+  .ant-drawer-body {
+    margin: 0 5%;
+  }
+    
+  .ant-drawer-header {
+    margin: 0 5%;
+  }
+
+    
+  .contact-input.contact-question:focus + .contact-label > .contact-span,
+  .contact-input.contact-question:valid + .contact-label > .contact-span {
+    font-size: 10px;
+  }
+
+  .contact-textarea.contact-question:focus + .contact-label > .contact-span,
+  .contact-textarea.contact-question:valid + .contact-label > .contact-span {
+    top: -80px;
+    font-size: 10px;
+  }
+
+  .contact-input.contact-question:focus,
+  .contact-input.contact-question:valid {
+    font-size: 12px;
+  }
+
+  .contact-textarea.contact-question:valid,
+  .contact-textarea.contact-question:focus {
+    font-size: 12px;
+  }
+  .contact-input[type="reset"],
+  .contact-input[type="submit"] {
+    padding: 5px;
+    font-size: 9px;
+  }
+}
+
+
+
+
+/*
+button {
+  animation-name: focusstyle;
+  animation-duration: 100ms;
+  animation-play-state: paused; 
+  animation-fill-mode: both;
+}
+
+button:focus {
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+*/

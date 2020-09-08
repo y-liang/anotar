@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics starts -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141604364-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-141604364-1');
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics ends -->
+
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <title>Yan Liang</title>
+</head>
+
+<body style="margin: 0;">
+  <div id="root"></div>
+  <script>
+  </script>
+  <script type="text/javascript"> // redirect script, single page app, gh pages
+    (function (l) {
+      if (l.search) {
+        var q = {};
+        l.search.slice(1).split('&').forEach(function (v) {
+          var a = v.split('=');
+          q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
+        });
+        if (q.p !== undefined) {
+          window.history.replaceState(null, null,
+            l.pathname.slice(0, -1) + (q.p || '') +
+            (q.q ? ('?' + q.q) : '') +
+            l.hash
+          );
+        }
+      }
+    }(window.location))
+  </script>
+  <!-- End Single Page Apps for GitHub Pages -->
+</body>
+
+</html>

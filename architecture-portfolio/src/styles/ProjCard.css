@@ -1,0 +1,60 @@
+.ProjCard-all {
+  display: flex;
+  margin-bottom: 48px;
+}
+
+.ProjCard-all img {
+  width: 90%;
+  margin: 5%;
+  align-content: center;
+}
+
+.ProjCard-column-left,
+.ProjCard-column-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.ProjCard-column-left .ProjCard-img,
+.ProjCard-column-right .ProjCard-img {
+  margin-bottom: -4px;
+  cursor: default;
+}
+
+.ProjCard-column-center {
+  flex: 3;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.ProjCard-column-center .ProjCard-img {
+  width: calc(100% / 3);
+  flex: 0 0 calc(100% / 3);
+  height: 20%;
+  margin-bottom: -2px;
+  cursor: default;
+}
+
+.ProjCard-column-center .ProjCard-img:first-child {
+  margin-top: 0;
+}
+
+.ProjCard-column-left img:hover,
+.ProjCard-column-right img:hover,
+.ProjCard-column-center img:hover {
+  transform: scale(0.9);
+  transition: all 0.9s;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 750px) {
+  .ProjCard-column-left,
+  .ProjCard-column-right {
+    flex: 0;
+    transition: all 0.9s;
+    display: none;
+  }
+}

@@ -1,0 +1,142 @@
+.About-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 800px;
+  transition: background 1s;
+  margin-top: -10px;
+}
+
+.About {
+  margin: 150px 20%;
+  width: 60%;
+  height: 500px;
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+.About-img-wrapper,
+.About-text-wrapper {
+  width: 50%;
+  display: inline-block;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.About-text-wrapper .banner-anim-elem {
+  width: 90% !important;
+}
+
+.About-pic,
+.About-map {
+  position: absolute;
+}
+
+.About-pic {
+  width: 75%;
+  margin: auto 12.5%;
+}
+
+.About-map {
+  width: 250px;
+  top: 60px;
+  left: 30px;
+}
+.About-map.map2{
+  width: 200px;
+  left: 50px;
+}
+
+.About-text-wrapper .banner-anim-elem {
+  padding: 28px;
+  margin-top: 18px;
+  margin-left: -6px;
+}
+
+.About-text-wrapper .banner-anim-elem:nth-child(7),
+.About-text-wrapper .banner-anim-elem:nth-child(8),
+.About-text-wrapper .banner-anim-elem:nth-child(9) {
+  margin-top: -16px;
+}
+
+.About-text-wrapper {
+  h1 {
+  font-size: 12px;
+  margin: 5px auto;
+  }
+  em {
+    height: 2px;
+    width: 60px;
+    border-radius: 2px;
+    display: block;
+  }
+  p {
+    font-size: 9px;
+    margin-top: 14px;
+  }
+}
+
+
+.About-wrapper .anticon{
+  position: absolute;
+  font-size: 24px;
+  top: 50%;
+  margin-top: -12px;
+  cursor: pointer;
+  color: rgba(0, 0, 255, 0.75);
+}
+
+:focus {
+  outline: -webkit-focus-ring-color auto 0;
+  outline-width: 0;
+}
+
+
+.About-wrapper .anticon-caret-left{
+  left: 5px;
+  z-index: 999;
+}
+
+.About-wrapper .anticon-caret-right{
+  right: 5px;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .About-text-wrapper p {
+  font-size: 6.5px;
+  }
+  .About-text-wrapper h1 {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .About {
+    width: 90%;
+    margin: 150px 5%;
+    transition: all 0.9s;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .About-text-wrapper .banner-anim-elem {
+    margin-left: -16px;
+  }
+  .About-text-wrapper h1 {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .About {
+    width: 100%;
+    margin: 150px 0;
+    transition: all 0.9s;
+  }
+  .About-text-wrapper h1 {
+    font-size: 9px;
+  }
+}

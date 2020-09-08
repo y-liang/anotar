@@ -1,0 +1,63 @@
+.textshuffle-wrapper {
+  padding: 0;
+  background-color: white;
+  height: 150px;
+  position: relative;
+  width: 100%;
+  cursor: default;
+}
+
+.textshuffle {
+  color: rgba(0, 0, 255, 0.75);
+  width: 50%;
+  height: 100px;
+  position: absolute;
+  top: 24px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 5px auto 45px auto;
+}
+.textshuffle-shape {
+  position: relative;
+}
+.textshuffle-shape > * {
+  width: 50%;
+  height: 64px;
+  position: absolute;
+  overflow: hidden;
+}
+.textshuffle-shape > * > * {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 69, 0, 0.1);
+}
+.textshuffle-shape .shape-left {
+  left: 0;
+}
+.textshuffle-shape .shape-right {
+  right: 0;
+}
+.textshuffle > .title {
+  font-size: 58px;
+  letter-spacing: 8px;
+  position: absolute;
+  min-width: 50px;
+  overflow: hidden;
+  text-align: center;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+}
+.textshuffle-bar {
+  width: 100%;
+  height: 1px;
+  background: orangered;
+  position: absolute;
+  top: 70px;
+}
+.textshuffle .content {
+  font-size: 12px;
+  position: absolute;
+  top: 78px;
+  width: 100%;
+  text-align: center;
+}

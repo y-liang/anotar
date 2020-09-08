@@ -1,0 +1,152 @@
+.projects-prof-top {
+  height: 1px;
+  width: 100%;
+  background-color: white;
+}
+
+.pdf-viewer-multi-renderer {
+  margin-top: 6rem;
+}
+
+.pdf-multi-viewer {
+  background-color: white;
+  background-image: none;
+}
+
+.renderer-target-container {
+  background-color: white;
+}
+
+
+.pdf-multi-viewer .pdf-multi-viewer-option-bar {
+  float: left;
+  padding-left: 0px;
+  margin-left: 5rem;
+  background-color: rgba(64, 64, 255, 1);
+}
+.pdf-viewer-list-item {
+  list-style: none;
+}
+
+
+.pdf-viewer-list-item.loaded:hover {
+  color: rgba(64, 64, 255, 1);
+}
+
+.pdf-viewer-list.hidden > li{
+  display: none;
+}
+
+.pdf-multi-viewer .pdf-viewer-list.hidden {
+  margin-left: -300px;
+}
+
+.renderer-controls {
+  height: 32px;
+  box-shadow: none;
+  background-color: white;
+  background-image: none;
+  display: none;
+}
+.pdf-multi-viewer .pdf-viewer-list-item-meta {
+  display: none;
+}
+
+#viewer {
+  background-color: white;
+  border-top: 0 solid rgba(64, 64, 255, 1);
+}
+
+.pdfViewer .page {
+  border-image: none;
+}
+
+.renderer-target-container {
+  overflow: unset;
+}
+
+.pdf-multi-viewer .pdf-viewer-list {
+  width: 100px;
+  min-width: 100px;
+}
+
+.pdf-multi-viewer .pdf-viewer-list-item {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.75);
+  border-bottom: 0 solid rgba(64, 64, 255, 1);
+  border-right: 0 solid rgba(64, 64, 255, 1);
+  padding: 12px;
+}
+
+.pdf-multi-viewer .pdf-viewer-list-item.loaded.active {
+  background-color: yellow;
+  color: rgba(64, 64, 255, 1);
+  border-right: 0 solid rgba(64, 64, 255, 1);
+}
+
+.pdf-multi-viewer .pdf-viewer-list-item:first-child {
+  margin: 0px auto auto auto;
+  border-top: 3px solid rgba(64, 64, 255, 1);
+}
+
+.pdf-multi-viewer .pdf-viewer-list {
+  background-color: white;
+  background-image: none;
+}
+
+.pdf-multi-viewer .pdf-multi-viewer-option-bar .viewer-controls-button.toggled {
+  background-color: transparent;
+  background-image: none;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.pdf-multi-viewer .pdf-multi-viewer-option-bar .viewer-controls-button {
+  background-color: rgba(64, 64, 255, 1);
+}
+
+.pdf-multi-viewer .pdf-multi-viewer-option-bar .viewer-controls-button:last-child,
+.pdf-multi-viewer .pdf-multi-viewer-option-bar .viewer-controls-button:first-child {
+  border-radius: 9px;
+  transition: all 0.5s;
+}
+
+.pdf-multi-viewer .pdf-multi-viewer-option-bar .viewer-controls-button:focus, 
+.pdf-multi-viewer .pdf-multi-viewer-option-bar .viewer-controls-button:hover {
+  background-color: rgba(64, 64, 255, 0);
+  border-color: transparent;
+  border: 0px solid transparent;
+  background-image: none;
+  box-shadow: none;
+  border-radius: 0;
+  transition: all 0.5s;
+}
+
+.pdfViewer .page {
+  margin: 0 auto -8px;
+}
+
+.pdf-multi-viewer .pdf-multi-viewer-option-bar .viewer-controls-button .toggle-list-label:before {
+  content: url();
+}
+
+.renderer-target-container {
+  background-color: white;
+}
+
+.pdfViewer .page .canvasWrapper canvas,
+.textLayer{
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.page {
+  margin: 0 0 0 12px !important;
+  width: 90% !important;
+  height: 90% !important;
+}
+
+.page .canvasWrapper {
+  width: 100% !important;
+  height: 100% !important;
+}
