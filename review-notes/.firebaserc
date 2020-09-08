@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "notesover": {
+      "hosting": {
+        "notesover": [
+          "notesover"
+        ]
+      }
+    }
+  }
+}

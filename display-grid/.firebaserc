@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "thousand-sea": {
+      "hosting": {
+        "thousand-sea": [
+          "thousand-sea"
+        ]
+      }
+    }
+  }
+}

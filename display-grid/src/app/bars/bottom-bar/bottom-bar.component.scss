@@ -1,0 +1,17 @@
+@import "../../app.component.scss";
+
+#bottom-bar {
+   text-align: center;
+   background-color: $color-dark;
+   padding: 12px 0;
+
+   p {
+      color: $color-lighter;
+      font-family: $font-title;
+      font-weight: 300;
+      font-size: 15px;
+      margin: 0;
+
+      cursor: default;
+   }
+}

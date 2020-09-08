@@ -1,0 +1,10 @@
+@import "../../app.component.scss";
+
+#portfolio {
+   padding: $padding-page;
+
+   iframe {
+      width: 100%;
+      height: 100vh;
+   }
+}

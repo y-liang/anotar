@@ -1,0 +1,81 @@
+#record-tree {
+  .mat-tree {
+    padding: 0 0 0 24px;
+    font-size: 18px;
+
+    // style on all tree nodes
+    .mat-nested-tree-node {
+      .mat-tree-invisible {
+        display: none;
+      }
+
+      .mat-tree-node {
+        display: flex;
+        justify-content: space-between;
+        transition: all 0.2s ease;
+
+        .node-name {
+          padding-left: 12px;
+        }
+
+        &:hover {
+          cursor: pointer;
+          background-color: lightblue;
+
+          mat-icon {
+            opacity: 1;
+          }
+        }
+
+        mat-icon {
+          opacity: 0;
+          padding-right: 9px;
+          transition: all 0.2s ease;
+        }
+
+      }
+    }
+
+    // style on all first level tree nodes
+    >.mat-nested-tree-node {
+
+      >.mat-tree-node {
+        background-color: lightcyan;
+        border-bottom: 1px solid black;
+
+        >.node-name {
+          padding: 36px 12px;
+          font-weight: 700;
+        }
+
+      }
+
+      >.mat-tree-descendants {
+        background-color: lightgray;
+
+        // style on all second level tree nodes
+        >.mat-nested-tree-node {
+
+          >.mat-tree-node {
+            border-bottom: 1px solid black;
+
+            >.node-name {
+              padding: 24px 12px;
+            }
+
+          }
+
+          >.mat-tree-descendants {
+            background-color: lightpink;
+
+
+            // style on all third level tree nodes
+          }
+
+        }
+
+      }
+    }
+
+  }
+}

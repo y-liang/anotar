@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "thousand-sea",
+      "public": "dist/thousand-sea",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

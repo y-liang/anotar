@@ -1,0 +1,107 @@
+<!-- <div>
+   <div *ngFor="let team of teams | async">
+      {{team.name}}
+   </div>
+   <button (click)="addTeam()">add team</button>
+
+   <div *ngFor="let user of users | async">
+      {{user.name.first}} {{user.name.middle}} {{user.name.last}}
+   </div>
+   <button (click)="addUser()">add user</button>
+   <div *ngFor="let record of records | async">
+      {{record.tags}}
+   </div>
+   <button (click)="addRecord()">add record</button>
+   <div *ngFor="let note of notes | async">
+      {{note.content}}
+   </div>
+   <button (click)="addNote()">add note</button>
+</div> -->
+
+
+<div id="left-part">
+   <nav id="navbar-wrapper">
+      <div id="navbar-top">
+
+         <!-- team brand -->
+         <div class="navbar-item navbar-team">
+            <a [routerLink]="['/team/abc']">
+               {{team.name}}
+            </a>
+         </div>
+         <!-- user profile -->
+         <div class="navbar-item navbar-user">
+            <div id="user-pic">
+               <!-- <img src="" alt=""> -->
+               <span class="material-icons">
+                  account_box
+               </span>
+            </div>
+            <div id="user-info">
+               <span id="user-name">
+                  {{user.name.first}} {{user.name.middle}} {{user.name.last}}
+               </span>
+               <span id="user-role">
+                  {{user.role}}
+               </span>
+               <span id="user-status">
+                  joined in April 2020
+               </span>
+            </div>
+         </div>
+         <!-- search -->
+         <div class="navbar-item navbar-search">
+            <input type="text" placeholder="search a record...">
+            <span class="material-icons">
+               search
+            </span>
+         </div>
+
+      </div>
+
+      <div class="nav-divider"></div>
+
+      <!-- feed data from database -->
+      <div id="navbar-middle">
+
+         <app-record-tree></app-record-tree>
+
+      </div>
+
+      <div class="nav-divider"></div>
+
+      <div id="navbar-bottom">
+         <div class="navbar-item navbar-footer">
+            <div id="notification">
+               <span class="material-icons">
+                  more
+               </span>
+               <!-- <div id="notification-item" *ngFor="let notification of notifications">
+                  {{notification}}
+               </div> -->
+
+            </div>
+            <div id="message">
+               <span class="material-icons">
+                  event_note
+               </span>
+               <!-- <div id="message-item" *ngFor="let message of messages">
+                  {{message}}
+               </div> -->
+
+            </div>
+            <div id="setting">
+               <span class="material-icons">
+                  settings_applications
+               </span>
+            </div>
+            <div id="exit">
+               <span class="material-icons">
+                  exit_to_app
+               </span>
+            </div>
+
+         </div>
+      </div>
+   </nav>
+</div>

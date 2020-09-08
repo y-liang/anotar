@@ -1,0 +1,122 @@
+@import "../../app.component.scss";
+
+
+#left-bar {
+
+   position: fixed;
+   background-color: $color-yellow;
+   z-index: 999;
+
+
+
+   ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+
+      li.nav-item {
+         font-size: 24px;
+         width: 100%; // keep icons in place
+
+         &:last-child {
+            margin-top: auto; // keep the last one at the bottom
+         }
+
+         a.nav-link {
+            display: flex;
+            align-items: center;
+            height: 5rem;
+            text-decoration: none;
+            filter: grayscale(100%) opacity(0.9);
+            transition: filter 0.3s ease;
+
+
+            &:hover {
+               filter: grayscale(0%) opacity(1);
+               background-color: $color-green;
+            }
+
+            &:active {
+               color: $color-yellower;
+            }
+
+
+            span.material-icons {
+               font-size: 36px;
+               margin: 0 1.5rem;
+            }
+
+            span.link-text {
+               display: none;
+               margin-left: 1rem;
+            }
+
+         }
+      }
+
+      li.nav-item.logo {
+         a.nav-link {
+            span.link-text.logo-text {
+               font-weight: bold;
+               text-transform: uppercase;
+               text-align: center;
+               font-size: 1.5rem;
+               letter-spacing: 0.3ch;
+            }
+
+            span.material-icon {
+               transform: rotate(0deg);
+               transition: transform 0.3s ease;
+            }
+         }
+      }
+   }
+}
+
+
+
+/* small screen */
+@media only screen and (max-width: 600px) {
+   #left-bar {
+      bottom: 0;
+      width: 100vw;
+      height: 5rem;
+
+      ul {
+         flex-direction: row;
+      }
+   }
+}
+
+/* large screen */
+@media only screen and (min-width: 600px) {
+
+   #left-bar {
+      top: 0;
+      width: 5rem;
+      height: 100vh;
+
+      transition: width 0.3s ease;
+
+      &:hover {
+         width: 15rem;
+
+         ul>li.nav-item>a.nav-link>span.link-text {
+            display: block;
+         }
+
+         ul>li.nav-item.logo>a.nav-link>span.material-icons {
+            transform: rotate(-180deg);
+         }
+
+      }
+   }
+
+
+
+
+}

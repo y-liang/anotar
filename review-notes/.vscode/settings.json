@@ -1,0 +1,9 @@
+{
+   "editor.defaultFormatter": "michelemelluso.code-beautifier",
+   "editor.formatOnSave": true,
+   "scssLint.showHighlights": true,
+   "scssLint.languages": [
+
+      "scss"
+   ]
+}

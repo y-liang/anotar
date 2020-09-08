@@ -1,0 +1,8 @@
+{
+   "cSpell.words": [
+      "abcdefghijklmnopqrstuvwxyz"
+   ],
+   "javascript.format.semicolons": "insert",
+   "typescript.format.semicolons": "insert",
+   "editor.formatOnSave": true
+}
